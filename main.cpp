@@ -60,7 +60,7 @@ void leerArbol(){
     }
 }
 void leerQueries(){
-    int a , b , Q;
+    int a , b /*, Q*/;
     /*cin>>Q;
     for(int i=1;i<=Q;i++){
         cin>>a>>b;
@@ -73,7 +73,7 @@ void leerQueries(){
 }
 void ponerNivelesANodos(int nodoAct,int nivelAct){
     nivel[nodoAct]=nivelAct;
-    for(int i=0;i<arbol[nodoAct].size();i++){
+    for(unsigned int i=0;i<arbol[nodoAct].size();i++){
         ponerNivelesANodos(arbol[nodoAct][i],nivelAct+1);
     }
 }
